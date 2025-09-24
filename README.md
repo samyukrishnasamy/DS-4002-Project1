@@ -1,5 +1,6 @@
 ## Repository Structure
 
+'''bash
 DS-4002-PROJECT1
 ├── DATA
 │ ├── original_dataset
@@ -37,3 +38,4 @@ DS-4002-PROJECT1
 │
 ├── requirements.txt
 └── .gitignore
+'''

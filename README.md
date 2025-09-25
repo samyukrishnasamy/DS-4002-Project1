@@ -19,50 +19,48 @@ Spam classification using Logistic Regression on the UC Irvine SMS Spam Collecti
 - Runs on macOS, Windows, or Linux (as long as packages are installed)
 
 **Dependencies**
+All dependencies can be installed with the command: `pip install -r requirements.txt`
+
+
+**Project Structure**
 ```bash
-pip install -r requirements.txt
-
-
-
-## Repository Structure
-
-
 DS-4002-PROJECT1
-├── DATA         # All datasets 
-│ ├── original_dataset     # Raw UC Irvine SMS Spam text
-│ │ └── SMSSpamCollection
-│ ├── original_dataset_csv
-│ │ └── SMSSpamCollection.csv 
-│ ├── clean     # Transformed CSV version (with labels)
-│ │ └── sms_clean.csv
+├── DATA # Stores the Datasets
+│ ├── original_dataset
+│ │ └── SMSSpamCollection # Raw UC Irvine SMS Spam text
+│ ├── original_dataset_csv 
+│ │ └── SMSSpamCollection.csv # Transformed CSV version (with labels)
+│ ├── clean   
+│ │ └── sms_clean.csv # Cleaned up data set (no duplicates)
 │ └── splits    # Train, validation, and test splits
 │ ├── train.csv
 │ ├── val.csv
 │ └── test.csv
 │
-├── OUTPUT    # Generated outputs
-│ ├── 01_Exploratory_Plots    # EDA figures
+├── OUTPUT  # Generated outputs
+│ ├── 01_Exploratory_Plots # EDA figures from Step 1
 │ │ ├── Class_Distribution.png
 │ │ ├── Duplicates_By_Category.png
 │ │ ├── Message_Length_Distribution.png
 │ │ └── Missing_Values.png
 │ │
-│ ├── 04_Training_Results  # Training artifacts
-│ │ ├── logreg.joblib
+│ ├── 04_Training_Results # Training results from Step 4
+│ │ ├── logreg.joblib # Trained Logistic Regression (complete pipeline) saved so it can be reused without retraining
+
 │ │ └── train_report.json
 │ │
-│ └── 05_Test_Eval      # Test results
+│ └── 05_Test_Eval  # Test results from Step 5
 │ ├── confusion_matrix.png
 │ └── test_report.json
 │
-├── SCRIPTS             # Workflow notebooks (run in order)
+├── SCRIPTS  # Workflow notebooks (run in order)
 │ ├── 01_exploratory_data_clean.ipynb
 │ ├── 02_data_clean.ipynb
 │ ├── 03_splitting_dataset.ipynb
 │ ├── 04_train.ipynb
 │ └── 05_eval_tests.ipynb
 │
-├── requirements.txt   # Required packages
+├── requirements.txt # Required packages
 └── .gitignore  # Ignore patterns
 ```
 

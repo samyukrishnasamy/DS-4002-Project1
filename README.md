@@ -19,10 +19,10 @@ Spam classification using Logistic Regression on the UC Irvine SMS Spam Collecti
 - Runs on macOS, Windows, or Linux (as long as packages are installed)
 
 **Dependencies**
-All dependencies can be installed with the command: `pip install -r requirements.txt`
+- All dependencies can be installed with the command: `pip install -r requirements.txt`
 
 
-**Project Structure**
+## Project Structure
 ```bash
 DS-4002-PROJECT1
 ├── DATA # Stores the Datasets
